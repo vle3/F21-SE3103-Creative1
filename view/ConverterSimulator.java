@@ -72,7 +72,7 @@ public class ConverterSimulator {
         JPanel row4 = new JPanel();
         row4.add(result);
         result.setLineWrap(true);
-        //result.setBackground(Color.YELLOW);
+        result.setBackground(Color.YELLOW);
         Border border = BorderFactory.createLineBorder(Color.black);
         result.setBorder(BorderFactory.createCompoundBorder(border, 
         BorderFactory.createEmptyBorder(10, 10, 10, 10)));
