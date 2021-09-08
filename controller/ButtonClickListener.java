@@ -29,10 +29,13 @@ public class ButtonClickListener implements ActionListener
                 panel.getResultText().removeAll();
                 double input = Double.parseDouble(panel.getAmountField().getText());
                 String inputCurrency = panel.getOriginalCurrency().getSelectedItem().toString();
-                String outputCurrency = panel.getConvertCurrency().getSelectedItem().toString();
-                String result = 
-                panel.getConverter().convert(input, inputCurrency, outputCurrency);
-                panel.getUSDollarField().setText(result);
+                String USResult = 
+                panel.getConverter().convert(input, inputCurrency, "Dollar");
+                panel.getUSDollarField().setText(USResult);
+
+                String UKResult = 
+                panel.getConverter().convert(input, inputCurrency, "Pound");
+                panel.getUKField().setText(UKResult);
             }
             catch(NumberFormatException exception)
             {

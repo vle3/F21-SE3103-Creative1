@@ -142,6 +142,9 @@ public class ConverterSimulator {
     public JTextArea getUSDollarField() {
         return USDollarField;
     }
+    public JTextArea getUKField() {
+        return UKField;
+    }
     public JTextArea getResultText()
     {
         return result;
