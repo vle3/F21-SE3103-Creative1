@@ -145,6 +145,15 @@ public class ConverterSimulator {
     public JTextArea getUKField() {
         return UKField;
     }
+    public JTextArea getJPYField() {
+        return JPYField;
+    }
+    public JTextArea getEUField() {
+        return EUField;
+    }
+    public JTextArea getRupeeField() {
+        return RupeeField;
+    }
     public JTextArea getResultText()
     {
         return result;

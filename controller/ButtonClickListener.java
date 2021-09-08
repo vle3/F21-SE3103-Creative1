@@ -36,6 +36,18 @@ public class ButtonClickListener implements ActionListener
                 String UKResult = 
                 panel.getConverter().convert(input, inputCurrency, "Pound");
                 panel.getUKField().setText(UKResult);
+
+                String EUResult = 
+                panel.getConverter().convert(input, inputCurrency, "Euro");
+                panel.getEUField().setText(EUResult);
+
+                String YenResult = 
+                panel.getConverter().convert(input, inputCurrency, "Yen");
+                panel.getJPYField().setText(YenResult);
+
+                String RupeeResult =
+                panel.getConverter().convert(input, inputCurrency, "Rupee");
+                panel.getRupeeField().setText(RupeeResult);
             }
             catch(NumberFormatException exception)
             {
