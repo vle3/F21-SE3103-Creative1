@@ -32,7 +32,7 @@ public class ButtonClickListener implements ActionListener
                 String outputCurrency = panel.getConvertCurrency().getSelectedItem().toString();
                 String result = 
                 panel.getConverter().convert(input, inputCurrency, outputCurrency);
-                panel.getResultText().setText(result);
+                panel.getUSDollarField().setText(result);
             }
             catch(NumberFormatException exception)
             {
