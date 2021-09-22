@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class ButtonClickListener implements ActionListener
 {
@@ -51,7 +52,8 @@ public class ButtonClickListener implements ActionListener
             }
             catch(NumberFormatException exception)
             {
-                panel.getResultText().setText("Invalid");
+                JOptionPane optionPane = new JOptionPane();
+                optionPane.showMessageDialog(panel.getWinow(), "Invalid input" , "Warning",optionPane.WARNING_MESSAGE);
             }
         }
     }   
